@@ -1,0 +1,23 @@
+//pogram to delete element at last
+#include<stdio.h>
+void main()
+{
+    int a[10],i,num,n;
+    printf("enter size of array");
+    scanf("%d",&n);
+    printf("enter array elements");
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&a[i]);
+    }
+   for(i=n;i>n-1;i--){
+    a[i]=a[i-1];
+   }
+
+
+    
+
+    for(i=0;i<n-1;i++){
+        printf("%d",a[i]);
+    }
+}
